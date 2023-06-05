@@ -14,7 +14,7 @@ let package = Package(
             targets: ["GiphyURLSessionNetworkService"]),
     ],
     dependencies: [
-         .package(url: "https://github.com/Yabby1997/GiphyRepository", from: "0.1.0"),
+         .package(url: "https://github.com/Yabby1997/GiphyRepository", from: "0.1.1"),
     ],
     targets: [
         .target(
