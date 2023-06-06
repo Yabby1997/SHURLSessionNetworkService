@@ -6,9 +6,9 @@
 //
 
 import Foundation
-import GiphyRepository
+import SHNetworkServiceInterface
 
-public final class GiphyURLSessionNetworkService: GiphyNetworkService {
+public final class SHURLSessionNetworkService: SHNetworkServiceInterface {
     public enum Errors: LocalizedError {
         case failedToBuildRequest
         case badResponse

@@ -4,23 +4,23 @@
 import PackageDescription
 
 let package = Package(
-    name: "GiphyURLSessionNetworkService",
+    name: "SHURLSessionNetworkService",
     platforms: [
         .iOS(.v15)
     ],
     products: [
         .library(
-            name: "GiphyURLSessionNetworkService",
-            targets: ["GiphyURLSessionNetworkService"]),
+            name: "SHURLSessionNetworkService",
+            targets: ["SHURLSessionNetworkService"]),
     ],
     dependencies: [
-         .package(url: "https://github.com/Yabby1997/GiphyRepository", from: "0.1.1"),
+         .package(url: "https://github.com/Yabby1997/SHNetworkServiceInterface", from: "0.1.0"),
     ],
     targets: [
         .target(
-            name: "GiphyURLSessionNetworkService",
+            name: "SHURLSessionNetworkService",
             dependencies: [
-                .product(name: "GiphyRepository", package: "GiphyRepository")
+                .product(name: "SHNetworkServiceInterface", package: "SHNetworkServiceInterface"),
             ]),
     ]
 )
